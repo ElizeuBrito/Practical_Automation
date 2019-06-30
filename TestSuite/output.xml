@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190630 02:36:31.865" rpa="false">
+<suite id="s1" name="Correios TCs" source="C:\Users\elizeu\PycharmProjects\Practical_Automation_Project\TestSuite\Correios_TCs.robot">
+<test id="s1-t1" name="Test Case1: Fetch an address through a valid zip code">
+<kw name="Open Correios Website in Chrome and Maximize" library="Correios_Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${correios_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190630 02:36:32.301" level="INFO">Opening browser 'chrome' to base url 'http://www.buscacep.correios.com.br/sistemas/buscacep/BuscaCepEndereco.cfm'.</msg>
+<status status="PASS" starttime="20190630 02:36:32.300" endtime="20190630 02:36:41.473"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190630 02:36:41.473" endtime="20190630 02:36:42.591"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Browser maximized maximized successfully</arg>
+</arguments>
+<msg timestamp="20190630 02:36:42.591" level="INFO">Browser maximized maximized successfully</msg>
+<status status="PASS" starttime="20190630 02:36:42.591" endtime="20190630 02:36:42.591"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser maximized successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:42.591" endtime="20190630 02:36:42.591"></status>
+</kw>
+<status status="PASS" starttime="20190630 02:36:32.300" endtime="20190630 02:36:42.592"></status>
+</kw>
+<kw name="Type Zip Code in Endereco or Zip Code Field" library="Correios_Keywords">
+<kw name="Get Search Text Field" library="Correios_Locators">
+<assign>
+<var>${search_text_field}</var>
+</assign>
+<msg timestamp="20190630 02:36:42.592" level="INFO">${search_text_field} = //*[@id='Geral']/div/div/span[2]/label/input</msg>
+<status status="PASS" starttime="20190630 02:36:42.592" endtime="20190630 02:36:42.592"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${search_text_field}</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:42.593" endtime="20190630 02:36:42.624"></status>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${search_text_field}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:42.625" level="INFO">Double clicking element '//*[@id='Geral']/div/div/span[2]/label/input'.</msg>
+<status status="PASS" starttime="20190630 02:36:42.625" endtime="20190630 02:36:42.662"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${search_text_field}</arg>
+<arg>${correios_valid_zip}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:42.662" level="INFO">Typing text '13050120' into text field '//*[@id='Geral']/div/div/span[2]/label/input'.</msg>
+<status status="PASS" starttime="20190630 02:36:42.662" endtime="20190630 02:36:42.741"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Zip Code is typed successfully</arg>
+</arguments>
+<msg timestamp="20190630 02:36:42.742" level="INFO">Zip Code is typed successfully</msg>
+<status status="PASS" starttime="20190630 02:36:42.741" endtime="20190630 02:36:42.742"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Zip Code is typed successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:42.742" endtime="20190630 02:36:42.742"></status>
+</kw>
+<status status="PASS" starttime="20190630 02:36:42.592" endtime="20190630 02:36:42.742"></status>
+</kw>
+<kw name="Click on Buscar Zip Code button" library="Correios_Keywords">
+<kw name="Get Search Button" library="Correios_Locators">
+<assign>
+<var>${buscar_button}</var>
+</assign>
+<msg timestamp="20190630 02:36:42.743" level="INFO">${buscar_button} = //input[@value= 'Buscar']</msg>
+<status status="PASS" starttime="20190630 02:36:42.743" endtime="20190630 02:36:42.743"></status>
+</kw>
+<kw name="Get Result Zip Search" library="Correios_Locators">
+<assign>
+<var>${result_search}</var>
+</assign>
+<msg timestamp="20190630 02:36:42.743" level="INFO">${result_search} = //*[contains(text(),'Rua Augusto de Carvalho Asbahr')]</msg>
+<status status="PASS" starttime="20190630 02:36:42.743" endtime="20190630 02:36:42.743"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${buscar_button}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:42.743" level="INFO">Clicking button '//input[@value= 'Buscar']'.</msg>
+<status status="PASS" starttime="20190630 02:36:42.743" endtime="20190630 02:36:43.072"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190630 02:36:48.074" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190630 02:36:43.072" endtime="20190630 02:36:48.074"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${result_search}</arg>
+<arg>${result_zip_search}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:48.074" level="INFO">Verifying element '//*[contains(text(),'Rua Augusto de Carvalho Asbahr')]' contains exact text 'Rua Augusto de Carvalho Asbahr '.</msg>
+<status status="PASS" starttime="20190630 02:36:48.074" endtime="20190630 02:36:48.104"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Button is clicked successfully</arg>
+</arguments>
+<msg timestamp="20190630 02:36:48.104" level="INFO">Button is clicked successfully</msg>
+<status status="PASS" starttime="20190630 02:36:48.104" endtime="20190630 02:36:48.104"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Button is clicked successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:48.104" endtime="20190630 02:36:48.105"></status>
+</kw>
+<status status="PASS" starttime="20190630 02:36:42.742" endtime="20190630 02:36:48.105"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190630 02:36:48.105" endtime="20190630 02:36:50.404"></status>
+</kw>
+<doc>This test case is responsible for
+fetch an address through a valid zip code</doc>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" starttime="20190630 02:36:32.300" endtime="20190630 02:36:50.405" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Test Case2: Fetch a zip code through a valid address">
+<kw name="Open Correios Website in Chrome and Maximize" library="Correios_Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${correios_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190630 02:36:50.415" level="INFO">Opening browser 'chrome' to base url 'http://www.buscacep.correios.com.br/sistemas/buscacep/BuscaCepEndereco.cfm'.</msg>
+<status status="PASS" starttime="20190630 02:36:50.414" endtime="20190630 02:36:54.090"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190630 02:36:54.091" endtime="20190630 02:36:55.206"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Browser maximized maximized successfully</arg>
+</arguments>
+<msg timestamp="20190630 02:36:55.206" level="INFO">Browser maximized maximized successfully</msg>
+<status status="PASS" starttime="20190630 02:36:55.206" endtime="20190630 02:36:55.206"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser maximized successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:55.206" endtime="20190630 02:36:55.207"></status>
+</kw>
+<status status="PASS" starttime="20190630 02:36:50.413" endtime="20190630 02:36:55.207"></status>
+</kw>
+<kw name="Type Address in Endereco or Zip Code Field" library="Correios_Keywords">
+<kw name="Get Search Text Field" library="Correios_Locators">
+<assign>
+<var>${search_text_field}</var>
+</assign>
+<msg timestamp="20190630 02:36:55.208" level="INFO">${search_text_field} = //*[@id='Geral']/div/div/span[2]/label/input</msg>
+<status status="PASS" starttime="20190630 02:36:55.208" endtime="20190630 02:36:55.209"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${search_text_field}</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:55.209" endtime="20190630 02:36:55.239"></status>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${search_text_field}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:55.239" level="INFO">Double clicking element '//*[@id='Geral']/div/div/span[2]/label/input'.</msg>
+<status status="PASS" starttime="20190630 02:36:55.239" endtime="20190630 02:36:55.274"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${search_text_field}</arg>
+<arg>${correios_valid_address}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:55.274" level="INFO">Typing text 'Rua Alcindo Vieira Barreiro Belo Horizonte' into text field '//*[@id='Geral']/div/div/span[2]/label/input'.</msg>
+<status status="PASS" starttime="20190630 02:36:55.274" endtime="20190630 02:36:55.421"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Address is typed successfully</arg>
+</arguments>
+<msg timestamp="20190630 02:36:55.421" level="INFO">Address is typed successfully</msg>
+<status status="PASS" starttime="20190630 02:36:55.421" endtime="20190630 02:36:55.421"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Address is typed successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:36:55.421" endtime="20190630 02:36:55.422"></status>
+</kw>
+<status status="PASS" starttime="20190630 02:36:55.207" endtime="20190630 02:36:55.422"></status>
+</kw>
+<kw name="Click on Buscar Address button" library="Correios_Keywords">
+<kw name="Get Search Button" library="Correios_Locators">
+<assign>
+<var>${buscar_button}</var>
+</assign>
+<msg timestamp="20190630 02:36:55.422" level="INFO">${buscar_button} = //input[@value= 'Buscar']</msg>
+<status status="PASS" starttime="20190630 02:36:55.422" endtime="20190630 02:36:55.423"></status>
+</kw>
+<kw name="Get Result Address Search" library="Correios_Locators">
+<assign>
+<var>${result_search}</var>
+</assign>
+<msg timestamp="20190630 02:36:55.423" level="INFO">${result_search} = //*[contains(text(),'30640-100')]</msg>
+<status status="PASS" starttime="20190630 02:36:55.423" endtime="20190630 02:36:55.423"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${buscar_button}</arg>
+</arguments>
+<msg timestamp="20190630 02:36:55.423" level="INFO">Clicking button '//input[@value= 'Buscar']'.</msg>
+<status status="PASS" starttime="20190630 02:36:55.423" endtime="20190630 02:36:55.769"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190630 02:37:00.771" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190630 02:36:55.769" endtime="20190630 02:37:00.771"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${result_search}</arg>
+<arg>${result_address_search}</arg>
+</arguments>
+<msg timestamp="20190630 02:37:00.773" level="INFO">Verifying element '//*[contains(text(),'30640-100')]' contains exact text '30640-100'.</msg>
+<status status="PASS" starttime="20190630 02:37:00.772" endtime="20190630 02:37:00.821"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Button is clicked successfully</arg>
+</arguments>
+<msg timestamp="20190630 02:37:00.821" level="INFO">Button is clicked successfully</msg>
+<status status="PASS" starttime="20190630 02:37:00.821" endtime="20190630 02:37:00.822"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Button is clicked successfully</arg>
+</arguments>
+<status status="PASS" starttime="20190630 02:37:00.822" endtime="20190630 02:37:00.822"></status>
+</kw>
+<status status="PASS" starttime="20190630 02:36:55.422" endtime="20190630 02:37:00.822"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190630 02:37:00.823" endtime="20190630 02:37:03.114"></status>
+</kw>
+<doc>This test case is responsible for
+fetch a zip code through a valid address</doc>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" starttime="20190630 02:36:50.410" endtime="20190630 02:37:03.115" critical="yes"></status>
+</test>
+<doc>Testing Correios website</doc>
+<status status="PASS" starttime="20190630 02:36:31.874" endtime="20190630 02:37:03.116"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Correios TCs">Correios TCs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
