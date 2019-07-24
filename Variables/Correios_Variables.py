@@ -6,7 +6,7 @@ correios_valid_zip = '13030130'
 correios_valid_address = 'Rua Alcindo Vieira Barreiro Belo Horizonte'
 
 result_zip_search = 'Rua Augusto de Carvalho Asbahr '
-result_address_search = '30640-100'
+result_address_search = '13050-055'
 result_invalid_zip_code = 'DADOS NAO ENCONTRADOS'
 
 random_number_length = '10'
