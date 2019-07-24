@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="598cf0fe-6eea-4fb1-9df0-3e0b909b95fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Practical_Automation_Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExternalKeywords/Correios_External_Keywords.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Keywords/Correios_Keywords.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/Correios_Locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestSuite/Correios_TCs.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestSuite/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestSuite/output.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestSuite/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Variables/Correios_Variables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Variables/Correios_Variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Variables/Correios_Variables.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestSuite/Correios_TCs.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="833">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#0#235#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Variables/Correios_Variables.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -60,13 +51,13 @@
       <list>
         <option value="$PROJECT_DIR$/TestSuite/Correios_TCs.robot" />
         <option value="$PROJECT_DIR$/Locators/Correios_Locators.py" />
-        <option value="$PROJECT_DIR$/Variables/Correios_Variables.py" />
         <option value="$PROJECT_DIR$/ExternalKeywords/Correios_External_Keywords.py" />
         <option value="$PROJECT_DIR$/Keywords/Correios_Keywords.robot" />
+        <option value="$PROJECT_DIR$/Variables/Correios_Variables.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -82,18 +73,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="Practical_Automation_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practical_Automation_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Practical_Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practical_Automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Practical_Automation_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practical_Automation_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="ExternalKeywords" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practical_Automation_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practical_Automation_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="TestSuite" type="462c0819:PsiDirectoryNode" />
+              <item name="Practical_Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practical_Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="Variables" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,7 +90,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jaguars_OSS_Automation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,7 +118,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -155,24 +141,11 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python37/Lib/site-packages/robot/libraries/BuiltIn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Python37/Lib/site-packages/robot/libraries/BuiltIn.py" />
     <entry file="file://$PROJECT_DIR$/Locators/Correios_Locators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Variables/Correios_Variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -195,11 +168,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestSuite/Correios_TCs.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="833">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#0#235#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Variables/Correios_Variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
